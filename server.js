@@ -39,7 +39,7 @@ app.listen(3000 ||process.env.PORT, () => {
 	console.log(`app is running on port ${process.env.PORT}`);
 });
 
-console.log(process.env);
+
 
 /*
 /-->res=this is working
