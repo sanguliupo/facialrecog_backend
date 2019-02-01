@@ -12,10 +12,8 @@ const image =require('./controllers/image');
 const db=knex({
   client: 'pg',
   connection: {
-    host : '1postgresql-slippery-84148',
-    user : 'sanguliupo',
-    password : '',
-    database : 'smart-brain'
+    connectionString : process.env.DATABASE_URL,
+    ssl:true,
   }
 });
 
